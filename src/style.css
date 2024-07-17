@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "blacksansblack";
+    src: url(./fonts/blacksansblack.woff)format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "blacksansbold";
+    src: url(./fonts/blacksansbold.woff)format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "blacksansregular";
+    src: url(./fonts/blacksansregular.woff)format("woff");
+    font-weight: normal;
+    font-size: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.img{
+    height: 480px;
+    position: relative;
+    top: -40px;
+    left: 50px;
+}
+
+.last{
+    height: 250px;
+    margin-top: 80px;
+    margin-left: -50px;
+}
+
+.good{
+    height: 300px;
+    margin-top: 15px;
+}
+
+.phone{
+    height: 450px;
+}
+
+.very{
+    height: 40px;
+}
+
+
+.frameOne{
+    width:120px;
+    position:relative;
+    top:-20px;
+}
+
+.frameTwo{
+    width: 170px;
+}
+
+.frameThree{
+    width: 120px;
+    position: relative;
+    top: -20px;
+}
+
+@media screen and (max-width:900px){
+    .img{
+        height: 500px;
+        position: absolute;
+        top: 1650px;
+        width: 300px;
+        z-index: 1;
+        left: 17px;
+    }
+
+    .last{
+        height: 200px;
+        width: 250px;
+        margin-left: 120px;
+        position:relative;
+        top: -130px;
+
+    }
+
+    .good{
+        height: 260px;
+        margin-top: 10px;
+    }
+
+    .phone{
+        height: 400px;
+        width: 290px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+    
+     .very{
+        height: 30px;
+        width: 150px;
+     }
+
+     .frameOne{
+        width: 80px;
+        width: 80px;
+     }
+
+     .frameTwo{
+        width: 110px;
+     }
+
+     .frameThree{
+        height: 90px;
+        width: 120px;
+     }
+
+}
+    
