@@ -69,6 +69,29 @@
     top: -20px;
 }
 
+.leftH{
+    height: 350px;
+    position: relative;
+    top: -27rem;
+    left: -24rem;
+}
+
+.rightH{
+    height: 350px;
+    position: relative;
+    top: -27rem;
+    left: 24rem;
+}
+
+.button{
+   height: 80px;
+   width: 100px;
+   margin-top: 180px;
+   position: relative;
+   left: -10rem;
+
+}
+
 @media screen and (max-width:900px){
     .img{
         height: 500px;
@@ -118,6 +141,18 @@
      .frameThree{
         height: 90px;
         width: 120px;
+     }
+
+     .leftH{
+        display: none;
+     }
+
+     .rightH{
+        display: none;
+     }
+
+     .button{
+        display: none;
      }
 
 }

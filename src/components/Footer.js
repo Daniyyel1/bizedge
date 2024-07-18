@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import bizedge from "../assets/bizedge.png";
+import button from "../assets/button.png"
 
 function Footer() {
   return (
@@ -10,6 +11,7 @@ function Footer() {
           width: {xs:"380px",md:"100%"},
           marginTop: "40px",
           backgroundColor: "#FAFAFA",
+          display:"flex"
         }}
       >
         <Box
@@ -24,6 +26,9 @@ function Footer() {
           }}
         >
           <img className="very" src={bizedge} alt="bizedge"></img>
+
+          <img className="button" src={button} alt="button"></img>
+          
           <Box
             sx={{
               display: "flex",
@@ -85,8 +90,11 @@ function Footer() {
               <Typography sx={{ lineHeight: "40px" }}>Book A Demo</Typography>
             </Box>
           </Box>
+          
         </Box>
+        
       </Box>
+      
     </Box>
   );
 }

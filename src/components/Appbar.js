@@ -8,6 +8,8 @@ import frame3 from "../assets/frame3.png";
 import left from "../assets/left.png";
 import right from "../assets/right.png";
 import useMediaQuery from "@mui/material";
+import leftH from "../assets/leftH.png"
+import rightH from "../assets/rightH.png"
 
 function Appbar() {
   return (
@@ -20,7 +22,7 @@ function Appbar() {
           maxWidth: "1100px",
           marginTop: "20px",
           margin:"auto",
-          padding:{xs:"10px",md:"0px"}
+          padding:{xs:"20px",md:"20px"},
         }}
       >
         <img className="lol" src={bizedge} alt="bizedge"></img>
@@ -55,8 +57,10 @@ function Appbar() {
               textDecoration: "none",
               color: "black",
               fontFamily: "blacksansregular",
-              fontWeight: "20",
-              display:{xs:"none",md:"inherit"}
+              fontWeight: "200",
+              display:{xs:"none",md:"inherit"},
+              opacity:{xs:".7",md:".8"},
+              fontSize:{xs:"14px",md:"14px"}
             }}
             href="#"
           >
@@ -69,10 +73,11 @@ function Appbar() {
               backgroundColor: "#EAF8FA",
               border: "none",
               textTransform: "capitalize",
-              fontFamily: "blacksansblack",
-              fontWeight: "400",
+              fontFamily: "blacksansregular",
+              fontWeight: "600",
               fontSize: "15px",
-              display:{xs:"none",md:"inherit"}
+              display:{xs:"none",md:"inherit"},
+              opacity:{xs:".7",md:".7"}
             }}
             variant="outlined"
             size="medium"
@@ -109,23 +114,16 @@ function Appbar() {
           unlock your full HR potential with our powerful people management app.
         </Typography>
 
-        <Typography
-          fontSize="18px"
-          width="550px"
-          margin="auto"
-          fontFamily="blacksansregular"
-          lineHeight="30px"
+        <Typography sx={{
+          fontSize:{xs:"14px",md:"18px"},
+          width:{xs:"320px",md:"650px"},
+          margin:{xs:"auto",md:"auto"},
+          fontFamily:"blacksansregular",
+          lineHeight:{xs:"20px",md:"30px"},
+          marginTop:{xs:"10px",md:"inherit"},
+          opacity:".7"
+        }}
 
-          sx={{
-            "@media(max-width: 600px)":{
-              fontSize:"14px",
-              width:"320px",
-              lineHeight:"20px",
-              marginTop:"10px",
-              opacity:".7"
-
-            }
-          }}
         >
 
           Elevate your HR game with automated employee onboarding, intuitive
@@ -150,10 +148,12 @@ function Appbar() {
               border: "none",
               backgroundColor: "#E0EEF0",
               textTransform: "capitalize",
-              fontFamily: "blacksansblack",
-              fontSize: "13px",
-              fontWeight: "600",
-              width: {xs:"330px",md:"160px"}
+              fontFamily: "blacksansregular",
+              fontSize: "11px",
+              width: {xs:"330px",md:"160px"},
+              padding:{xs:"10px 10px",md:"10px 10px"},
+              fontWeight:{xs:"600",md:"600"},
+              height:{xs:"41px",md:"41px"}
 
 
             }}
@@ -166,11 +166,13 @@ function Appbar() {
               width: "160px",
               backgroundColor: "#2898A4",
               color: "#fff",
-              fontSize: "13px",
-              fontFamily: "blacksansblack",
+              fontSize: "10px",
+              fontFamily: "blacksansregular",
               textTransform: "initial",
-
-              width:{xs:"330px",md:"160px"}
+              fontWeight:{xs:"600",md:"600"},
+              width:{xs:"330px",md:"160px"},
+              padding:{xs:"10px 10px", md:"10px 10px" },
+              height:{xs:"41px",md:"41px"}
 
 
             }}
@@ -189,8 +191,6 @@ function Appbar() {
           
          }} >
      
-           
-
             <img className="frameOne" src={frame1} alt="frame1"></img>
 
           <img className="frameTwo" src={frame2} alt="frame2"></img>
@@ -199,9 +199,17 @@ function Appbar() {
             src={frame3}
             alt="frame3"
           ></img>
-
+   
          </Box>
-         
+            
+
+            <Box>
+
+            <img className="leftH" src={leftH} alt="leftH"></img>
+            <img className="rightH" src={rightH} alt="rightH"></img>
+
+
+            </Box>
 
 
       </Box>

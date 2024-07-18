@@ -5,8 +5,8 @@ import people from "../assets/people.png";
 
 function Section() {
   return (
-    <Box>
-      <Box>
+    <Box >
+      <Box sx={{marginTop:{xs:"inherit",md:"-180px"}}}>
         <Typography
           variant="h1"
           sx={{
@@ -22,13 +22,13 @@ function Section() {
         <Typography
           sx={{
             fontFamily: "blacksansregular",
-            fontSize: { xs: "15px", md: "20px" },
+            fontSize: { xs: "14px", md: "18px" },
             marginTop: "20px",
             textAlign: "center",
-            width: { xs: "350px", md: "540px" },
+            width: { xs: "350px", md: "580px" },
             lineHeight: { xs: "26px", md: "" },
             margin: "auto",
-            marginTop: { xs: "10px", md: "" },
+            marginTop: { xs: "10px", md: "20px" },
             opacity: { xs: ".7", md: ".7" },
           }}
         >
@@ -43,7 +43,7 @@ function Section() {
             borderRadius: "20px",
             backgroundColor: "#EBEFFA",
             margin: "auto",
-            marginTop: {xs: "3rem",md:"30px"},
+            marginTop: {xs: "3rem",md:"90px"},
             flexDirection:{xs:"column",md:"row"}
           }}
         >
@@ -82,10 +82,11 @@ function Section() {
             <Typography
               sx={{
                 fontFamily: "blacksansregular",
-                width: {xs:"330px",md:"350px"},
-                fontSize: {xs:"15px",md:"18px"},
+                width: {xs:"330px",md:"400px"},
+                fontSize: {xs:"15px",md:"17px"},
                 marginTop: "20px",
-                textAlign:{xs:"center",md:"inherit"}
+                textAlign:{xs:"center",md:"inherit"},
+                opacity:{xs:".7",md:".7"}
               }}
             >
               
