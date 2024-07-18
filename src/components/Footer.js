@@ -8,7 +8,7 @@ function Footer() {
       <Box
         sx={{
           height: {xs:"100%",md:"380px"},
-          width: {xs:"380px",md:"100%"},
+          width: {xs:"100%",md:"100%"},
           marginTop: "40px",
           backgroundColor: "#FAFAFA",
           display:"flex"
