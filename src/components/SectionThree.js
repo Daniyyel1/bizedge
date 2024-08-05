@@ -24,7 +24,8 @@ function SectionThree() {
               color: "red",
               opacity: ".8",
               fontSize: "13px",
-              textAlign:{xs:"center",md:"inherit"}
+              textAlign:{xs:"center",md:"inherit"},
+              fontFamily:"blacksansregular"
             }}
           >
             Payroll
@@ -46,11 +47,12 @@ function SectionThree() {
               fontSize: {xs:"15px",md:"14px"},
               fontWeight: "200",
               opacity: ".8",
-              width: "300px",
+              width: {xs:"340px",md:"300px"},
               margin:{xs:"auto",md:"0px"},
               marginTop: {xs:"20px",md:"23px"},
               lineHeight: {xs:"22px",md:"25px"},
-              textAlign:{xs:"center",md:"inherit"}
+              textAlign:{xs:"center",md:"inherit"},
+              fontFamily:"blacksansregular"
             }}
           >
             Spend less time doing your company's calculations,deductions and pay

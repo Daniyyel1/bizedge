@@ -28,35 +28,40 @@ function Sectiontwo() {
  
     
 
-
+          <Box>
 
         <Typography
           sx={{
             width: "250px",
-            marginTop: {xs:"20px",md:"70px"},
+            marginTop: {xs:"20px",md:"30px"},
             fontFamily: "blacksansregular",
             fontWeight: "600",
-            marginLeft: {xs:"50px",md:"50px"},
-            fontSize: "9px",
+            marginLeft: {xs:"50px",md:"5px"},
+            fontSize: "11px",
             color: "orange",
             textAlign:{xs:"center",md:"inherit"},
             margin:{xs:"",md:""},
-            marginBottom:{xs:"100px",md:"0px"}
+            marginBottom:{xs:"15px",md:"inherit"},
+            paddingBlock:{xs:"inherit",md:"20px"},
+            opacity:".7"
           }}
         >
           Time & Attendance
+          </Typography>
+
           <Typography
             sx={{
               color: "#000",
-              marginTop: {xs:"10px",md:"10px"},
+              marginTop: {xs:"inherit",md:"20px"},
               width: {xs:"300px",md:"200px"},
               fontFamily: "blacksansregular",
-              fontWeight: "600",
-              fontSize: {xs:"22px",md:"23px"},
+              fontWeight: "800",
+              fontSize: {xs:"26px",md:"23px"},
               textAlign:{xs:"center",md:"inherit"},
-              margin:{xs:"",md:"0px"},
-              marginLeft:{xs:"-20px",md:""},
-              lineHeight:{xs:"28px",md:"inherit"}
+              margin:{xs:"auto",md:"0px"},
+              lineHeight:{xs:"28px",md:"inherit"},
+              marginBottom:{xs:"20px",md:"inherit"}
+            
             }}
           >
             Track employee attendance easily
@@ -65,18 +70,24 @@ function Sectiontwo() {
             sx={{
               fontSize: "15px",
               marginTop: {xs:"10px",md:"30px"},
-              width: {xs:"290px",md:"240px"},
+              width: {xs:"290px",md:"270px"},
               lineHeight: {xs:"20px",md:"30px"},
               color: "#000",
               fontSize: "13px",
               textAlign:{xs:"center",md:"inherit"},
-              marginLeft:{xs:"-10px",md:"0px"}
+              marginLeft:{xs:"-10px",md:"0px"},
+              fontFamily:"blacksansregular",
+              opacity:".7",
+              margin:{xs:"auto",md:""},
+              marginBottom:{xs:"70px",md:"inherit"}
             }}
           >
             Set up an efficient clock in & clock out tool for your employees,
-            whether they work onsite or remotely.{" "}
+            whether they work onsite or remotely.
           </Typography>
-        </Typography>
+        
+        </Box>
+
       </Box>
     </Box>
   );

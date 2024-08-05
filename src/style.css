@@ -27,7 +27,7 @@
 
 
 .img{
-    height: 480px;
+    height: 490px;
     position: relative;
     top: -40px;
     left: 50px;
@@ -37,6 +37,18 @@
     height: 250px;
     margin-top: 80px;
     margin-left: -50px;
+}
+
+.people{
+    width: 350px;
+    height: 300px;
+    margin-top: 30px;
+    position: relative;
+    left: 30px;
+}
+
+.people2{
+    display: none;
 }
 
 .good{
@@ -49,7 +61,7 @@
 }
 
 .very{
-    height: 40px;
+    height: 30px;
 }
 
 
@@ -73,42 +85,51 @@
     height: 350px;
     position: relative;
     top: -27rem;
-    left: -24rem;
+    left: -25rem;
 }
 
 .rightH{
     height: 350px;
     position: relative;
     top: -27rem;
-    left: 24rem;
+    left: 25rem;
 }
 
 .button{
-   height: 80px;
+   height: 90px;
    width: 100px;
-   margin-top: 180px;
-   position: relative;
-   left: -10rem;
+   margin-top: 160px;
 
 }
 
 @media screen and (max-width:900px){
     .img{
-        height: 500px;
+        height: 480px;
         position: absolute;
-        top: 1650px;
-        width: 300px;
+        top: 1660px;
+        width: 290px;
         z-index: 1;
-        left: 17px;
+        left: 35px;
     }
 
     .last{
         height: 200px;
         width: 250px;
-        margin-left: 120px;
+        margin-left: 130px;
         position:relative;
-        top: -130px;
+        top: -90px;
 
+    }
+
+    .people{
+        display: none;
+    }
+
+    .people2{
+        display: block;
+        margin-top: 10px;
+        position: relative;
+        left: -20px;
     }
 
     .good{
@@ -117,10 +138,10 @@
     }
 
     .phone{
-        height: 400px;
-        width: 290px;
+        height: 500px;
+        width: 300px;
         position: relative;
-        top: 50px;
+        top: -14px;
         left: 50px;
     }
     
@@ -154,6 +175,7 @@
      .button{
         display: none;
      }
+
 
 }
     

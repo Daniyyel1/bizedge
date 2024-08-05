@@ -2,11 +2,12 @@ import { Box, Container, ImageList, ImageListItem } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Component from "react";
 import people from "../assets/people.png";
+import people2 from "../assets/people2.png"
 
 function Section() {
   return (
     <Box >
-      <Box sx={{marginTop:{xs:"inherit",md:"-180px"}}}>
+      <Box sx={{marginTop:{xs:"inherit",md:"-200px"}}}>
         <Typography
           variant="h1"
           sx={{
@@ -38,39 +39,41 @@ function Section() {
         <Box
           sx={{
             width: { xs: "370px", md: "900px" },
-            height: { xs: "650px", md: "380px" },
+            height: { xs: "600px", md: "380px" },
             display: "flex",
             borderRadius: "20px",
             backgroundColor: "#EBEFFA",
             margin: "auto",
             marginTop: {xs: "3rem",md:"90px"},
-            flexDirection:{xs:"column",md:"row"}
+            flexDirection:{xs:"column",md:"row"},
+            padding:{xs:"inherit",md:"20px"}
           }}
         >
-          <Container sx={{ paddingBlock: { xs: "20px", md: "80px" } }}>
+          <Container sx={{ paddingBlock: { xs: "20px", md: "80px"} }}>
             <Typography
               sx={{
                 textTransform: "capitalize",
                 fontFamily: "blacksanblack",
-                fontWeight: {xs:"800",md:"540"},
+                fontWeight: {xs:"800",md:"550"},
                 color: "#1E387B",
                 textAlign:{xs:"center",md:"inherit"},
-                width:{xs:"340px"}
+                width:{xs:"340px"},
+                fontSize:{xs:"inherit",md:"14px"}
               }}
             >
               people analytics, time & attendance, core HR
             </Typography>
             <Typography sx={{
 
-            fontFamily:"blacksansbold",
-            fontSize:{xs:"28px",md:"30px"},
-            fontWeight:"550",
-            width:{xs:"300px",md:"400px"},
+            fontFamily:"blacksansregular",
+            fontSize:{xs:"28px",md:"28px"},
+            fontWeight:"600",
+            width:{xs:"300px",md:"350px"},
             marginTop:{xs:"20px",md:"40px"},
             textAlign:{xs:"center",md:"inherit"},
             lineHeight:{xs:"35px"},
             margin:{xs:"auto",md:"0px"},
-            paddingBlock:"10px"
+            paddingBlock:"7px"
             
 
             }}
@@ -82,9 +85,9 @@ function Section() {
             <Typography
               sx={{
                 fontFamily: "blacksansregular",
-                width: {xs:"330px",md:"400px"},
-                fontSize: {xs:"15px",md:"17px"},
-                marginTop: "20px",
+                width: {xs:"330px",md:"350px"},
+                fontSize: {xs:"15px",md:"16px"},
+                marginTop: {xs:"10px",md:"20px"},
                 textAlign:{xs:"center",md:"inherit"},
                 opacity:{xs:".7",md:".7"}
               }}
@@ -96,33 +99,29 @@ function Section() {
           </Container>
           <Container
             sx={{
-              width: {xs:"340px",md:"600px"},
+              width: {xs:"360px",md:"600px"},
               height: {xs:"360px",md:"360px"},
               marginTop: "10px",
               backgroundColor: "#fff",
               borderRadius: "15px",
-              position: "relative",
-              left: {xs:"10px",md:"25px"},
-              margin:{xs:"auto",md:"0px"}
+              position: {xs:"relative",md:"relative"},
+              left: {xs:"5px",md:"25px"},
+              margin:{xs:"auto",md:"0px"},
+              top:{xs:"-.6rem",md:"-.6rem"},
             }}
           >
             
-           <ImageList>
+           <Box>
            
-             <ImageListItem sx={{
-              width:{xs:"350px",md:"350px"},
-              marginTop:{xs:"30px",md:"50px"},
-              left:{xs:"-20px",md:"0px"}
-             
-             }}>
-             <img
+             <img className="people"
               src={people}
               alt="people"
             ></img>
+
+            <img className="people2" src={people2} alt="people2"></img>
              
-             </ImageListItem>
            
-           </ImageList>
+           </Box>
 
           </Container>
         </Box>

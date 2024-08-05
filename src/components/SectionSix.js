@@ -1,4 +1,4 @@
-import { Box, Button, Card, Typography } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Card, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function SectionSix() {
@@ -144,11 +144,11 @@ function SectionSix() {
 
       <Box
         sx={{
-          display: "flex",
+          display: {xs:"none",md:"flex"},
           justifyContent: {xs:"center",md:"flex-end"},
           alignItems:{xs:"center",md:"center"},
           maxWidth: "1045px",
-          gap: "14px",
+          gap: "20px",
           marginTop: "10px",
           flexDirection:{xs:"column",md:"row"}
         }}
@@ -160,6 +160,7 @@ function SectionSix() {
             textAlign: "center",
             border: "none",
             backgroundColor: "transparent",
+          
           }}
         >
           <Typography
@@ -194,13 +195,13 @@ function SectionSix() {
             sx={{
               marginTop: "10px",
               textTransform: "capitalize",
-              width: "150px",
+              width: "135px",
               borderRadius: "5px",
               color: "#000",
               fontFamily: "blacksansregular",
-              fontWeight: "600",
+              fontWeight: "500",
               fontSize: "14px",
-              height: "43px",
+              height: "40px",
               border: "1px solid #2898A4",
             }}
             variant="outlined"
@@ -247,15 +248,15 @@ function SectionSix() {
           </Typography>
           <Button
             sx={{
-              marginTop: "10px",
+              marginTop: "8px",
               textTransform: "capitalize",
-              width: "150px",
+              width: "135px",
               borderRadius: "5px",
               color: "#fff",
               fontFamily: "blacksansregular",
-              fontWeight: "600",
+              fontWeight: "500",
               fontSize: "14px",
-              height: "43px",
+              height: "40px",
               backgroundColor: "#F8B636",
             }}
             variant="contained"
@@ -295,13 +296,13 @@ function SectionSix() {
           <Button
             sx={{
               textTransform: "capitalize",
-              width: "150px",
+              width: "135px",
               borderRadius: "5px",
               color: "#000",
               fontFamily: "blacksansregular",
-              fontWeight: "600",
+              fontWeight: "500",
               fontSize: "14px",
-              height: "43px",
+              height: "40px",
               border: "1px solid #2898A4",
             }}
             variant="outlined"
@@ -313,333 +314,450 @@ function SectionSix() {
 
       <Box
         sx={{
-          maxWidth: "900px",
+          maxWidth: {xs:"300px",md:"900px"},
+          height:{xs:"1150px",md:"inherit"},
           margin: "auto",
           marginTop: "30px",
           color: "#2898A4",
+          borderRadius:{xs:"15px",md:"inherit"},
+          border:"2px solid whitesmoke"
+
         }}
       >
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            borderTop: "2px solid whitesmoke",
-          }}
-        >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              textTransform: "capitalize",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
-          >
-            people management
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
 
+          <Typography sx={{display:{xs:"block",md:"none",padding:"14px",color:"#000",fontFamily:"blacksansregular",opacity:".7"}}}>Startup</Typography>
+          <Typography sx={{fontFamily:"blacksansregular",color:"#000",padding:"14px",marginTop:"-20px",fontWeight:"700",display:{xs:"block",md:"none"}}}> ₦200</Typography>
+          <Typography sx={{fontFamily:"blacksansregular",color:"#000",padding:"14px",marginTop:"-20px",fontWeight:"100",display:{xs:"block",md:"none"}}}>Per Employee</Typography>
+          <Button sx={{margin:"auto",border:"1px solid #2898A4",display:{xs:"flex",md:"none"},alignItems:"center",justifyContent:"center",width:"270px",color:"#000",textTransform:"capitalize",fontFamily:"blacksansregular",fontWeight:"600px"}}>Get Started</Button>
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:{xs:"300px",md:"900px",background:"transparent"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            MyEdge - Employee self Service
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>People Management</Typography>
+            
+            </AccordionSummary>
+           
+           <AccordionDetails sx={{display:{xs:"block",md:"none"}}}>
+            <Typography sx={{fontFamily:"blacksansregular",fontWeight:"700",fontSize:"14px"}}>Request Leave/Time Off</Typography>
+            <Typography sx={{fontFamily:"blacksansregular",fontWeight:"700",marginTop:"15px",fontSize:"14px"}}>View Time Off History</Typography>
+           </AccordionDetails>
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:"900px",display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Task management
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600",display:{xs:"none",md:"block"}}}>MyEdge - Employee Self Service</Typography>
+            
+
+            </AccordionSummary>
+          
+            
+
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:{xs:"300px",md:"900px"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Customer Support
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Task Management</Typography>
+            
+            </AccordionSummary>
+          
+            <AccordionDetails>
+              <Typography sx={{fontFamily:"blacksansregular",fontWeight:"600",fontSize:"14px"}}>Assign & Collaborate on Tasks</Typography>
+            </AccordionDetails>
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:{xs:"300px",md:"900px"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            MyEdge - Employee self Service
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Customer Support</Typography>
+            
+            </AccordionSummary>
+          
+             <AccordionDetails>
+               <Typography sx={{fontFamily:"blacksansregular",fontWeight:"600",fontSize:"14px"}}>Phone & Chat Support</Typography>
+
+             </AccordionDetails>
+
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:{xs:"295px",md:"900px"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Time Off Management
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Time Off Management</Typography>
+            
+            </AccordionSummary>
+          
+             <AccordionDetails>
+               <Typography sx={{fontFamily:"blacksansregular",fontWeight:"600",width:"230px",fontSize:"14px"}}>Create and Customize Multiple Time Off Policies</Typography>
+
+                <Typography sx={{fontFamily:"blacksansregular",fontWeight:"600",fontSize:"14px",width:"260px",marginTop:"14px"}}>Apply for Time Off from Both Web and Mobile App</Typography>
+                <Typography sx={{fontFamily:"blacksansregular",fontWeight:"600",fontSize:"14px",marginTop:"15px"}}>Multi-Level Approvals</Typography>
+                <Typography sx={{fontFamily:"blacksansregular",fontWeight:"600",fontSize:"14px",marginTop:"15px",width:"280px"}}>Visibility of Who's out & Teams' Upcoming Leave</Typography>
+             </AccordionDetails>
+
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+            <Accordion sx={{width:"900px",display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Reports
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Reports</Typography>
+            
+            </AccordionSummary>
+          
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:{xs:"300px",md:"900px"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Document Management
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Document Management</Typography>
+            
+            </AccordionSummary>
+           
+             <AccordionDetails>
+              
+              <Typography sx={{fontFamily:"blacksansregular",fontSize:"14px",fontWeight:"600",width:"260px"}}>Store Employee Documents (Educational Certs & more)</Typography>
+
+             </AccordionDetails>
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:"900px", display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Employee Onboarding
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Employee Onboarding</Typography>
+            
+            </AccordionSummary>
+          
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:"900px", display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Time & Attendanace Management
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"700"}}>Time & Attendance Management</Typography>
+            
+            </AccordionSummary>
+              
+              <AccordionDetails>
+               
+
+
+              </AccordionDetails>
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:{xs:"300px",md:"900px"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Payroll - Direct deposit
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Payroll</Typography>
+            
+            </AccordionSummary>
+          
+            <AccordionDetails>
+
+             <Typography sx={{fontFamily:"blacksansregular",fontSize:"14px",fontWeight:"600"}}>Payroll Run History</Typography>
+             <Typography sx={{fontFamily:"blacksansregular",fontSize:"14px",fontWeight:"600",marginTop:"15px"}}>View And Share Employee Payslips</Typography>
+
+            </AccordionDetails>
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:"900px",display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Accounting - Income
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Payroll - Direct Deposit</Typography>
+            
+            </AccordionSummary>
+          
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:"900px",display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Accounting - Reports
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Accounting - Income</Typography>
+            
+            </AccordionSummary>
+          
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:"900px",display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Accounting - Expenditure
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Accounting - Reports</Typography>
+            
+            </AccordionSummary>
+          
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:"900px",display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Accounting - Contacts
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Accounting - Expenditure</Typography>
+            
+            </AccordionSummary>
+          
+          
+          </Accordion>
+        
+          </Box>
+        
         <Box
           sx={{
             display: "flex",
             justifyContent: "space-between",
             borderTop: "2px solid whitesmoke",
-            marginTop: "10px",
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-              fontSize: "14px",
-              fontFamily: "blacksansregular",
-              fontWeight: "590",
-            }}
+          <Accordion sx={{width:"900px",display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
           >
-            Accounting - Inventory
-          </Typography>
-          <KeyboardArrowDownIcon sx={{ marginTop: "10px" }} />
-        </Box>
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Accounting - Contacts</Typography>
+            
+            </AccordionSummary>
+          
+          
+          </Accordion>
+        
+          </Box>
+        
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            borderTop: "2px solid whitesmoke",
+          }}
+        >
+          <Accordion sx={{width:"900px",display:{xs:"none",md:"block"}}}>
+            <AccordionSummary sx={{color:"#2898A4"}}
+            
+            expandIcon={<KeyboardArrowDownIcon sx={{color:"#2898A4"}} />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+         
+            <Typography sx={{fontFamily:"blacksansregular",fontSize:"13px",fontWeight:"600"}}>Accounting - Inventory</Typography>
+            
+            </AccordionSummary>
+          
+          
+          </Accordion>
+        
+          </Box>
+        
+
+  
+
+          
+
+
+
+
+
       </Box>
     </Box>
   );

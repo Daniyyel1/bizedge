@@ -10,6 +10,7 @@ import right from "../assets/right.png";
 import useMediaQuery from "@mui/material";
 import leftH from "../assets/leftH.png"
 import rightH from "../assets/rightH.png"
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function Appbar() {
   return (
@@ -94,11 +95,11 @@ function Appbar() {
           textAlign="center"
           textTransform="capitalize"
           fontSize="55px"
-          fontWeight="550"
+          fontWeight="600"
           width="800px"
           margin="auto"
-          lineHeight="90px"
-          fontFamily="blacksansbold"
+          lineHeight="80px"
+          fontFamily="blacksansregular"
 
          sx={{
           "@media(max-width: 600px)": {
@@ -120,7 +121,7 @@ function Appbar() {
           margin:{xs:"auto",md:"auto"},
           fontFamily:"blacksansregular",
           lineHeight:{xs:"20px",md:"30px"},
-          marginTop:{xs:"10px",md:"inherit"},
+          marginTop:{xs:"10px",md:"10px"},
           opacity:".7"
         }}
 
@@ -149,11 +150,12 @@ function Appbar() {
               backgroundColor: "#E0EEF0",
               textTransform: "capitalize",
               fontFamily: "blacksansregular",
-              fontSize: "11px",
+              fontSize: "12px",
               width: {xs:"330px",md:"160px"},
               padding:{xs:"10px 10px",md:"10px 10px"},
               fontWeight:{xs:"600",md:"600"},
-              height:{xs:"41px",md:"41px"}
+              height:{xs:"41px",md:"35px"},
+              
 
 
             }}
@@ -172,7 +174,7 @@ function Appbar() {
               fontWeight:{xs:"600",md:"600"},
               width:{xs:"330px",md:"160px"},
               padding:{xs:"10px 10px", md:"10px 10px" },
-              height:{xs:"41px",md:"41px"}
+              height:{xs:"41px",md:"35px"}
 
 
             }}
